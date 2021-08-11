@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<section class="container-fluid bg-info p-3">
+    <h1 class="text-white">Customer Manage</h1>
+</section>
+<section class="container-fluid">
+    <section class="row mt-3">
+        <section class="col-md-4">
+            <form id="formCustomer">
+                <div>
+                    <label class="form-label" for="customerID">Customer ID</label>
+                    <input class="form-control" id="customerID" name="id" type="text">
+                </div>
+                <div>
+                    <label class="form-label" for="customerName">Customer Name</label>
+                    <input class="form-control" id="customerName" name="name" type="text">
+                </div>
+                <div>
+                    <label class="form-label" for="customerAddress">Address</label>
+                    <input class="form-control" id="customerAddress" name="address" type="text">
+                </div>
+                <div>
+                    <label class="form-label" for="customerContact">Contact</label>
+                    <input class="form-control" id="customerContact" name="contact" type="text">
+                </div>
+                <div class="btn-group mt-3">
+                    <button class="btn btn-primary" id="btnSave" type="button">Register Customer</button>
+                    <button class="btn btn-info" id="btnSearch" type="button">Search</button>
+                    <button class="btn btn-danger" id="btnRemove" type="button">Remove</button>
+                    <button class="btn btn-warning" id="btnGetAll" type="button">Get All</button>
+                </div>
+            </form>
+        </section>
+        <section class="col-md-8">
+            <table class="table table-hover table-bordered">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+                </tr>
+                </thead>
+                <tbody id="tBody">
+
+                </tbody>
+            </table>
+        </section>
+    </section>
+</section>
+
+
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>
